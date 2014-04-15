@@ -1,0 +1,12 @@
+#phpstorm project files
+.idea
+
+# sass
+*.sass-cache
+
+# composer files
+protected/vendors
+composer.lock
+
+# bower
+assets/other

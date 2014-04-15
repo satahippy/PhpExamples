@@ -1,0 +1,30 @@
+/* line 3, ../sass/style.scss */
+html {
+  height: 100%;
+}
+
+/* line 7, ../sass/style.scss */
+body {
+  position: relative;
+  min-height: 100%;
+}
+
+/* line 12, ../sass/style.scss */
+.site {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 18, ../sass/style.scss */
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #e7e7e7;
+  background-color: #f8f8f8;
+  padding: 10px 0;
+}

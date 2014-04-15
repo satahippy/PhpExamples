@@ -1,0 +1,9 @@
+{
+	"config": {
+		"vendor-dir": "protected/vendors"
+	},
+	"require": {
+		"silex/silex": "v1.2.0",
+		"symfony/templating": "v2.4.3"
+	}
+}
