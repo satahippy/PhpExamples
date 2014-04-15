@@ -11,4 +11,5 @@ $view['slots']->set('breadcrumbs', array(
 	<li><a href="strip_tags">strip_tags/fgetss</a></li>
 	<li><a href="urlencode">urlencode/rawurlencode</a></li>
 	<li><a href="addslashes">addslashes/addcslashes</a></li>
+	<li><a href="preg_quote">preg_quote & quotemeta</a></li>
 </ul>
