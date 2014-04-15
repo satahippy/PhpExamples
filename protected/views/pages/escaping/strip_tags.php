@@ -39,7 +39,7 @@ echo $view->render('partials/syntax_highlighter.php', array(
 
 <h2>Пример никчёмности</h2>
 <script type="syntaxhighlighter" class="brush: php"><![CDATA[
-	$html = '<img src="javascrip:xss()" />текст';
+	$html = '<img src="javascrip:xss()" /><p>текст</p>';
 	$allowable = '<img>';
 	file_put_contents('test.txt', $html);
 
@@ -57,7 +57,7 @@ echo $view->render('partials/syntax_highlighter.php', array(
 Результат
 <script type="syntaxhighlighter" class="brush: php"><![CDATA[<?php
 	ob_start();
-	$html = '<img src="javascrip:xss()" />текст';
+	$html = '<img src="javascrip:xss()" /><p>текст</p>';
 	$allowable = '<img>';
 	file_put_contents('test.txt', $html);
 

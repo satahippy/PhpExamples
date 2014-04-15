@@ -1,1 +1,1 @@
-<img src="javascrip:xss()" />текст
+<img src="javascrip:xss()" /><p>текст</p>

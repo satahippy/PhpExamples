@@ -15,7 +15,7 @@ echo $view->render('partials/syntax_highlighter.php', array(
 
 <h2>Для чего это надо?</h2>
 <p>
-	Если вы хотите что передать как параметр url.
+	Если вы хотите что то передать как параметр url.
 </p>
 <p>
 	Т.е. если у вас есть строка - "Привет Guns&Roses. Пишу вам из вечно холодной России. Когда вы уже наконец приедете к нам в Иркутск?".
@@ -24,13 +24,13 @@ echo $view->render('partials/syntax_highlighter.php', array(
 </p>
 <script type="syntaxhighlighter" class="brush: php"><![CDATA[
 	$message = 'Привет Guns&Roses. Пишу вам из вечно холодной России. Когда вы уже наконец приедете к нам в Иркутск?';
-	echo 'http://gunsnroses.com/write?message=' . urlencode($message);
+	echo 'http://gunsnroses.com/write?message=' . rawurlencode($message);
 ]]></script>
 Результат
 <script type="syntaxhighlighter" class="brush: php"><![CDATA[<?php
 	ob_start();
 	$message = 'Привет Guns&Roses. Пишу вам из вечно холодной России. Когда вы уже наконец приедете к нам в Иркутск?';
-	echo 'http://gunsnroses.com/write?message=' . urlencode($message);
+	echo 'http://gunsnroses.com/write?message=' . rawurlencode($message);
 	echo htmlspecialchars(ob_get_clean());
 ?>]]></script>
 

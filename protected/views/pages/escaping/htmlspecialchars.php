@@ -52,15 +52,6 @@ echo $view->render('partials/syntax_highlighter.php', array(
 <h2>Разное</h2>
 <p>Третьим параметорм функции вы можете указать кодировку для обработки строки. Список поддерживаемых кодировок смотри на оф. сайте</p>
 <p>Четвёртым параметром можно указать не преоброзовывать уже существующие html сущности. Это может быть полезно, если вы прогоняете строку (или какую то её часть) нексолько раз. Хотя это такая редкость)</p>
-<?php
-$text = '<b>Html текст</b>';
-$text2 = '<b>Html текст</b>';
-for ($i = 0; $i < 5; $i++) {
-	$text = htmlspecialchars($text);
-	$text2 = htmlspecialchars($text2, ENT_COMPAT | ENT_HTML401, 'UTF-8', false);
-}
-echo $text.'<br/>'.$text2;
-?>
 <script type="syntaxhighlighter" class="brush: php"><![CDATA[
 	$text = '<b>Html текст</b>';
 	$text2 = '<b>Html текст</b>';
@@ -106,6 +97,6 @@ echo $text.'<br/>'.$text2;
 
 <h2>Чтиво:</h2>
 <ul>
-	<li><a href="http://www.php.net/manual/ru/function.htmlentities.php">Официальная документация htmlentities</a></li>
+	<li><a href="http://www.php.net/manual/ru/function.htmlspecialchars.php">Официальная документация htmlspecialchars</a></li>
 	<li><a href="http://habrahabr.ru/post/137296/">Изменения в PHP 5.4</a></li>
 </ul>
