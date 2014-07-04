@@ -20,6 +20,7 @@ $view['slots']->set('breadcrumbs', array(
 </p>
 <ul>
 	<li><a href="spl-doubly-linked-list">SplDoublyLinkedList</a></li>
+	<li><a href="spl-stack">SplStack</a></li>
 </ul>
 
 <h2>Ссылки:</h2>
