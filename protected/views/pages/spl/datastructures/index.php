@@ -21,6 +21,7 @@ $view['slots']->set('breadcrumbs', array(
 <ul>
 	<li><a href="spl-doubly-linked-list">SplDoublyLinkedList</a></li>
 	<li><a href="spl-stack">SplStack</a></li>
+	<li><a href="spl-queue">SplQueue</a></li>
 </ul>
 
 <h2>Ссылки:</h2>
