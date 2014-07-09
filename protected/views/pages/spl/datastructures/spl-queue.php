@@ -22,8 +22,44 @@ echo $view->render('partials/syntax_highlighter.php', array(
 	Т.е. перебираем с начала без удаления элементов.
 </p>
 
+<h2>Когда использовать</h2>
+<p>
+	Когда нужен последовательный доступ к элементам в режиме FIFO.
+</p>
+
+<h2>Сравнение с обычным массивом</h2>
+<p>
+	В отличии от <code>SplStack</code>, <code>SplQueue</code> выигрывает в производительности у массива, особенно при больших объёмах.
+	<br/>
+	Памяти, как и <code>SplStack</code>, тоже расходует меньше.
+</p>
+
 <h2>Базовое использование</h2>
 <script type="syntaxhighlighter" class="brush: php"><![CDATA[
+$list = new SplQueue();
+
+$list->enqueue('first');
+$list->enqueue('second');
+$list->enqueue('third');
+
+// you can iterate in traditional syntax
+for ($list->rewind(); $list->valid(); $list->next()) {
+	echo $list->current() . "\n";
+}
+echo "\n";
+
+// and with foreach
+foreach ($list as $element) {
+	echo $element . "\n";
+}
+echo "\n";
+
+echo "top: " . $list->top() . "\n";
+echo "bottom: " . $list->bottom() . "\n\n";
+
+echo $list->count() . "\n";
+$list->pop();
+echo $list->count() . "\n";
 ]]></script>
 
 <pre>

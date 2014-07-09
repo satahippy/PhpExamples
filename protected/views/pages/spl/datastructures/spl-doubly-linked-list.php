@@ -24,6 +24,16 @@ echo $view->render('partials/syntax_highlighter.php', array(
 	Ну и конечно его можно перебрать так, как вам захочется.
 </p>
 
+<h2>Когда использовать</h2>
+<p>
+	Когда нужен последовательный доступ к элементам
+</p>
+
+<h2>Сравнение с обычным массивом</h2>
+<p>
+	Смотри <a href="spl-stack">SplStack</a> и <a href="spl-queue">SplQueue</a>.
+</p>
+
 <h2>Базовое использование</h2>
 <script type="syntaxhighlighter" class="brush: php"><![CDATA[
 $list = new SplDoublyLinkedList();
