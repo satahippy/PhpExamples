@@ -31,6 +31,7 @@ $view['slots']->set('breadcrumbs', array(
 	<li><a href="spl-queue">SplQueue</a></li>
 	<li><a href="spl-heap">SplHeap</a></li>
 	<li><a href="spl-max-heap">SplMaxHeap</a></li>
+	<li><a href="spl-min-heap">SplMinHeap</a></li>
 </ul>
 
 <h2>Ссылки:</h2>
