@@ -6,4 +6,5 @@ $view->extend('layouts/default.php');
 	<li><a href="escaping/">Экранирование символов и т.п.</a></li>
 	<li><a href="objects-comparing/">Сравнение объектов</a></li>
 	<li><a href="spl/">SPL</a></li>
+	<li><a href="built-in/">Встроенные классы и интерфейсы</a></li>
 </ul>

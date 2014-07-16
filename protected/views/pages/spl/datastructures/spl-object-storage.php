@@ -1,6 +1,6 @@
 <?php
 $view->extend('layouts/default.php');
-$view['slots']->set('title', 'Структуры данных.');
+$view['slots']->set('title', 'SplObjectStorage.');
 $view['slots']->set('breadcrumbs', array(
 	array('title' => 'SPL', 'url' => '/spl/'),
 	array('title' => 'Структуры данных', 'url' => '/spl/datastructures/'),
