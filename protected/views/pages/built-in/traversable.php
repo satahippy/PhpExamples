@@ -15,8 +15,8 @@ echo $view->render('partials/syntax_highlighter.php', array(
 	Интерфейс обозначающий, что класс является обходимым. Такой можно использовать в <code>foreach</code>.
 </p>
 <p>
-	<!-- TODO добавить ссылки на IteratorAggregate и Iterator -->
-	Реализовать его в принципе нельзя. Вместо этого надо реализовывать IteratorAggregate или Iterator.
+	<!-- TODO добавить ссылку на IteratorAggregate -->
+	Реализовать его в принципе нельзя. Вместо этого надо реализовывать IteratorAggregate или <a href="iterator">Iterator</a>.
 </p>
 <p>
 	Но у него тоже есть своя полезность, с точки зрения использования интерфейсов. Т.е. вы всегда можете проверить является ли переменная перебираемой. Тем не менее массив, этот интерфейс не реализует.
@@ -59,3 +59,8 @@ $printer->printOut(SplFixedArray::fromArray(['item1', 'item2']));
 
 ?>
 </pre>
+
+<h2>Ссылки:</h2>
+<ul>
+	<li><a href="http://php.net/manual/ru/class.traversable.php">Официальная документация</a></li>
+</ul>
