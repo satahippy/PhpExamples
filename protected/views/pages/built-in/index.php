@@ -9,4 +9,5 @@ $view['slots']->set('breadcrumbs', array(
 	<li><a href="traversable">Traversable</a></li>
 	<li><a href="iterator">Iterator</a></li>
 	<li><a href="iterator-aggregate">IteratorAggregate</a></li>
+	<li><a href="array-access">ArrayAccess</a></li>
 </ul>
