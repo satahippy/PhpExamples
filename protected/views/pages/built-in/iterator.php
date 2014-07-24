@@ -17,7 +17,6 @@ echo $view->render('partials/syntax_highlighter.php', array(
 
 <h2>Варианты перебора</h2>
 <p>
-	<!-- TODO поставить ссылку на ArrayIterator -->
 	Для того, чтобы избежать простых реализаций итераторов, здесь и далее будут приводиться примеры с использованием итератора
 	<a href="/spl/iterators/array-iterator">ArrayIterator</a>.
 </p>

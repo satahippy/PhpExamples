@@ -15,11 +15,11 @@ $view['slots']->set('breadcrumbs', array(
 <ul>
 	<li><a href="datastructures/">Структуры данных</a></li>
 	<li><a href="iterators/">Итераторы</a></li>
+	<li><a href="interfaces/">Интерфейсы</a></li>
 </ul>
 
 <h2>Ссылки:</h2>
 <ul>
-	<li>
-		<a href="http://www.php.net/manual/ru/spl.datastructures.php">SPL</a> - официальная документация
-	</li>
+	<li><a href="http://www.php.net/manual/ru/spl.datastructures.php">SPL</a> - официальная документация</li>
+	<li><a href="https://github.com/php/php-src/tree/master/ext/spl">Исходники на Github</a></li>
 </ul>

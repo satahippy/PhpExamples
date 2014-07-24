@@ -17,6 +17,15 @@ $view['slots']->set('breadcrumbs', array(
 	<li><a href="array-iterator">ArrayIterator</a></li>
 	<li><a href="empty-iterator">EmptyIterator</a></li>
 </ul>
+<p>
+	По мимо этого, можно реализовывать свои итераторы реализуя следующие интерфейсы:
+</p>
+<ul>
+	<li><a href="/built-in/iterator">Iterator</a></li>
+	<li><a href="/built-in/iterator-aggregate">IteratorAggregate</a></li>
+	<li><a href="/spl/interfaces/outer-iterator">OuterIterator</a></li>
+</ul>
+<!-- TODO ссылки на SeekableIterator, RecursiveIterator -->
 
 <h2>Ссылки:</h2>
 <ul>
