@@ -16,6 +16,7 @@ $view['slots']->set('breadcrumbs', array(
 <ul>
 	<li><a href="array-iterator">ArrayIterator</a></li>
 	<li><a href="empty-iterator">EmptyIterator</a></li>
+	<li><a href="filter-iterator">FilterIterator</a></li>
 </ul>
 <p>
 	По мимо этого, можно реализовывать свои итераторы реализуя следующие интерфейсы:

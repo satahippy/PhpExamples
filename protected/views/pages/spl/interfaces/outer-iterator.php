@@ -16,8 +16,7 @@ echo $view->render('partials/syntax_highlighter.php', array(
 	Интерфейс для обёрток итераторов.
 </p>
 <p>
-	<!-- TODO поставить ссылку на FilterIterator -->
-	Большое количество итераторов реализуют этот интерфейс. Самый простой пример - FilterIterator.
+	Большое количество итераторов реализуют этот интерфейс. Самый простой пример - <a href="../iterators/filter-iterator">FilterIterator</a>.
 </p>
 
 <h2>Пример реализации</h2>
@@ -128,5 +127,5 @@ foreach ($bar as $drink) {
 <h2>Ссылки:</h2>
 <ul>
 	<li><a href="http://php.net/manual/ru/class.outeriterator.php">Официальная документация</a></li>
-	<li><a href="https://blog.engineyard.com/2014/the-outer-iterator">Неплохая статья по OuterIterator</a></li>
+	<li><a href="https://blog.engineyard.com/2014/the-outer-iterator">Неплохая статья по OuterIterator и FilterIterator</a></li>
 </ul>
