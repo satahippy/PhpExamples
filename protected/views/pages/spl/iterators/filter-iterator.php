@@ -19,6 +19,9 @@ echo $view->render('partials/syntax_highlighter.php', array(
 	Это абстрактный класс, для того, чтобы его использовать надо унаследоваться от него и реализовать метод
 	<code>accept</code>.
 </p>
+<p>
+	Как альтернативу можно рассмотреть <a href="callback-filter-iterator">CallbackFilterIterator</a>.
+</p>
 
 <h2>Базовое использование</h2>
 
