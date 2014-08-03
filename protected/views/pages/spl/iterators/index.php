@@ -11,17 +11,30 @@ $view['slots']->set('breadcrumbs', array(
 	Очевидны они нужны для итерации некоторых структур данных.
 </p>
 <p>
-	SPL предлагает довольно много итераторов. 
+	SPL предлагает довольно много итераторов и всяких примочек. 
 </p>
+
+<h3>Вспомогательные классы</h3>
+<ul>
+	<li><a href="/spl/interfaces/outer-iterator">OuterIterator</a></li>
+	<li><a href="iterator-iterator">IteratorIterator</a></li>
+</ul>
+
+<h3>Итераторы</h3>
 <ul>
 	<li><a href="array-iterator">ArrayIterator</a></li>
 	<li><a href="empty-iterator">EmptyIterator</a></li>
+</ul>
+
+<h3>Обёртки</h3>
+<ul>
 	<li><a href="filter-iterator">FilterIterator</a></li>
 	<li><a href="callback-filter-iterator">CallbackFilterIterator</a></li>
 	<li><a href="infinite-iterator">InfiniteIterator</a></li>
 	<li><a href="limit-iterator">LimitIterator</a></li>
-	<li><a href="iterator-iterator">IteratorIterator</a></li>
+	<li><a href="no-rewind-iterator">NoRewindIterator</a></li>
 </ul>
+
 <p>
 	По мимо этого, можно реализовывать свои итераторы реализуя следующие интерфейсы:
 </p>
