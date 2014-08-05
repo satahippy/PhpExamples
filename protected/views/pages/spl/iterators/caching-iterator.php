@@ -277,6 +277,5 @@ foreach($it as $el) {
 <h2>Ссылки:</h2>
 <ul>
 	<li><a href="http://php.net/manual/ru/class.cachingiterator.php">Официальная документация</a></li>
-	<li>
-		<a href="http://blog.calevans.com/2013/12/19/the-php-cachingiterator/comment-page-1/#comment-110609">Мэн отлично описал внутренне устройство CachingIterator</a></li>
+	<li><a href="http://blog.calevans.com/2013/12/19/the-php-cachingiterator/comment-page-1/#comment-110609">Мэн отлично описал внутренне устройство CachingIterator</a></li>
 </ul>
