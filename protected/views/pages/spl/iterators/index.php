@@ -36,6 +36,7 @@ $view['slots']->set('breadcrumbs', array(
 	<li><a href="no-rewind-iterator">NoRewindIterator</a></li>
 	<li><a href="caching-iterator">CachingIterator</a></li>
 	<li><a href="append-iterator">AppendIterator</a></li>
+	<li><a href="multiple-iterator">MultipleIterator</a></li>
 </ul>
 
 <p>
