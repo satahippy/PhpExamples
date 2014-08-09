@@ -156,5 +156,6 @@ foreach ($it as $val) {
 
 <h2>Ссылки:</h2>
 <ul>
+	<li><a href="http://hakre.wordpress.com/2012/04/05/iterating-over-multiple-iterators-at-once/">Хороший пост, об AppendIterator и MultipleIterator</a></li>
 	<li><a href="http://php.net/manual/ru/class.multipleiterator.php">Официальная документация</a></li>
 </ul>
