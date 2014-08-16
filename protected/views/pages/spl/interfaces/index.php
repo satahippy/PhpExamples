@@ -13,6 +13,7 @@ $view['slots']->set('breadcrumbs', array(
 <ul>
 	<li><a href="outer-iterator">OuterIterator</a></li>
 	<li><a href="recursive-iterator">RecursiveIterator</a></li>
+	<li><a href="seekable-iterator">SeekableIterator</a></li>
 </ul>
 
 <h2>Ссылки:</h2>

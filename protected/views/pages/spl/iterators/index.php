@@ -46,8 +46,10 @@ $view['slots']->set('breadcrumbs', array(
 	<li><a href="/built-in/iterator">Iterator</a></li>
 	<li><a href="/built-in/iterator-aggregate">IteratorAggregate</a></li>
 	<li><a href="/spl/interfaces/outer-iterator">OuterIterator</a></li>
+	<li><a href="/spl/interfaces/recursive-iterator">RecursiveIterator</a></li>
+	<li><a href="/spl/interfaces/seekable-iterator">SeekableIterator</a></li>
 </ul>
-<!-- TODO ссылки на SeekableIterator, RecursiveIterator -->
+<!-- TODO ссылки на рекурсивный итераторы и на файловые итераторы -->
 
 <h2>Ссылки:</h2>
 <ul>
