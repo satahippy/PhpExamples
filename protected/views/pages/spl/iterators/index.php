@@ -39,6 +39,13 @@ $view['slots']->set('breadcrumbs', array(
 	<li><a href="multiple-iterator">MultipleIterator</a></li>
 </ul>
 
+<h3>Рекурсивные итераторы</h3>
+<ul>
+    <li><a href="recursive-iterator-iterator">RecursiveIteratorIterator</a></li>
+</ul>
+
+<!-- TODO ссылки на рекурсивный итераторы и на файловые итераторы -->
+
 <p>
 	По мимо этого, можно реализовывать свои итераторы реализуя следующие интерфейсы:
 </p>
@@ -49,7 +56,6 @@ $view['slots']->set('breadcrumbs', array(
 	<li><a href="/spl/interfaces/recursive-iterator">RecursiveIterator</a></li>
 	<li><a href="/spl/interfaces/seekable-iterator">SeekableIterator</a></li>
 </ul>
-<!-- TODO ссылки на рекурсивный итераторы и на файловые итераторы -->
 
 <h2>Ссылки:</h2>
 <ul>
