@@ -42,6 +42,7 @@ $view['slots']->set('breadcrumbs', array(
 <h3>Рекурсивные итераторы</h3>
 <ul>
     <li><a href="recursive-iterator-iterator">RecursiveIteratorIterator</a></li>
+    <li><a href="recursive-array-iterator">RecursiveArrayIterator</a></li>
 </ul>
 
 <!-- TODO ссылки на рекурсивный итераторы и на файловые итераторы -->
