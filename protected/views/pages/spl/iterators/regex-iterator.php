@@ -64,7 +64,7 @@ foreach ($it as $el) {
 	<li><code>GET_MATCH</code> - в значение записывается первое совпадение для текущей записи (используется
 		<code>preg_match()</code>)
 	</li>
-	<li><code>MATCH</code> - просто провериться текущая запись по регулрке (используется <code>preg_match()</code>)</li>
+	<li><code>MATCH</code> - просто провериться текущая запись по регулярке (используется <code>preg_match()</code>)</li>
 	<li>
 		<code>REPLACE</code> - производит замену в текущей записи (используется <code>preg_replace()</code>)
 		<br/>
