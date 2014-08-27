@@ -48,9 +48,10 @@ $view['slots']->set('breadcrumbs', array(
     <li><a href="recursive-callback-filter-iterator">RecursiveCallbackFilterIterator</a></li>
     <li><a href="recursive-regex-iterator">RecursiveRegexIterator</a></li>
     <li><a href="parent-iterator">ParentIterator</a></li>
+    <li><a href="recursive-tree-iterator">RecursiveTreeIterator</a></li>
 </ul>
 
-<!-- TODO ссылки на рекурсивный итераторы и на файловые итераторы -->
+<!-- TODO ссылки на файловые итераторы -->
 
 <p>
 	По мимо этого, можно реализовывать свои итераторы реализуя следующие интерфейсы:
