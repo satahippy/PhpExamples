@@ -19,6 +19,9 @@ echo $view->render(
 
 <h2>Описание</h2>
 <p>
+    Реализация <a href="recursive-filter-iterator">RecursiveFilterIterator</a>.
+</p>
+<p>
     Делает тоже самое, что и <a href="callback-filter-iterator">CallbackFilterIterator</a>, только рекурсивно.
 </p>
 <p>

@@ -47,6 +47,7 @@ $view['slots']->set('breadcrumbs', array(
     <li><a href="recursive-filter-iterator">RecursiveFilterIterator</a></li>
     <li><a href="recursive-callback-filter-iterator">RecursiveCallbackFilterIterator</a></li>
     <li><a href="recursive-regex-iterator">RecursiveRegexIterator</a></li>
+    <li><a href="parent-iterator">ParentIterator</a></li>
 </ul>
 
 <!-- TODO ссылки на рекурсивный итераторы и на файловые итераторы -->
