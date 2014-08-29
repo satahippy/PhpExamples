@@ -52,6 +52,10 @@ $view['slots']->set('breadcrumbs', array(
 </ul>
 
 <!-- TODO ссылки на файловые итераторы -->
+<h3>Файловые итераторы</h3>
+<ul>
+    <li><a href="directory-iterator">DirectoryIterator</a></li>
+</ul>
 
 <p>
 	По мимо этого, можно реализовывать свои итераторы реализуя следующие интерфейсы:
