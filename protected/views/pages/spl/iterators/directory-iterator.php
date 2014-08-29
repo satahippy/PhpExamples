@@ -65,6 +65,5 @@ foreach ($it as $file) {
 
 <h2>Ссылки:</h2>
 <ul>
-	<li><a href="http://php.net/manual/ru/class.arrayiterator.php">Официальная документация</a></li>
-	<li><a href="http://stackoverflow.com/a/16619183/3822548">Флаги ArrayIterator/ArrayObject</a></li>
+	<li><a href="http://php.net/manual/ru/class.directoryiterator.php">Официальная документация</a></li>
 </ul>
