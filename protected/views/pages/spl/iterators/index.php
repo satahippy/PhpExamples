@@ -55,6 +55,7 @@ $view['slots']->set('breadcrumbs', array(
 <h3>Файловые итераторы</h3>
 <ul>
     <li><a href="directory-iterator">DirectoryIterator</a></li>
+    <li><a href="filesystem-iterator">FilesystemIterator</a></li>
 </ul>
 
 <p>
