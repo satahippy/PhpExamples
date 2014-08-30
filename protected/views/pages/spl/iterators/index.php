@@ -51,12 +51,12 @@ $view['slots']->set('breadcrumbs', array(
     <li><a href="recursive-tree-iterator">RecursiveTreeIterator</a></li>
 </ul>
 
-<!-- TODO ссылки на файловые итераторы -->
 <h3>Файловые итераторы</h3>
 <ul>
     <li><a href="directory-iterator">DirectoryIterator</a></li>
     <li><a href="filesystem-iterator">FilesystemIterator</a></li>
     <li><a href="glob-iterator">GlobIterator</a></li>
+    <li><a href="recursive-directory-iterator">RecursiveDirectoryIterator</a></li>
 </ul>
 
 <p>
