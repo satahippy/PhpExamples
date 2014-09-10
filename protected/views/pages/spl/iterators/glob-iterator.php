@@ -18,6 +18,9 @@ echo $view->render('partials/syntax_highlighter.php', array(
 <p>
     Помимо этого есть метод <code>count</code>, благодаря которому можно узнать, сколько файлов попало под маску.
 </p>
+<p>
+    Этот класс наследуется от <a href="../files/spl-file-info">SplFileInfo</a>, и у него есть некоторые свои особенности, о которых следует знать (как минимум <code>getFileInfo/setInfoClass</code>).
+</p>
 
 <h2>Использование</h2>
 

@@ -15,6 +15,9 @@ echo $view->render('partials/syntax_highlighter.php', array(
 <p>
     Продвинутая версия <a href="directory-iterator">DirectoryIterator</a>. 
 </p>
+<p>
+    Этот класс наследуется от <a href="../files/spl-file-info">SplFileInfo</a>, и у него есть некоторые свои особенности, о которых следует знать (как минимум <code>getFileInfo/setInfoClass</code>).
+</p>
 
 <h2>DirectoryIterator vs FilesystemIterator</h2>
 <p>

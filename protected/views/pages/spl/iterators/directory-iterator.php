@@ -16,8 +16,7 @@ echo $view->render('partials/syntax_highlighter.php', array(
 	Итератор, который просто перебирает все файлы в папке.
 </p>
 <p>
-    <!-- TODO тут ссылка на SplFileInfo -->
-    Наследуется от SplFileInfo, поэтому каждый текущий элемент может использовать все полезности класса. 
+    Этот класс наследуется от <a href="../files/spl-file-info">SplFileInfo</a>, и у него есть некоторые свои особенности, о которых следует знать (как минимум <code>getFileInfo/setInfoClass</code>).
 </p>
 
 <h2>Использование</h2>
