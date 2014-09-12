@@ -15,7 +15,6 @@ echo $view->render(
         'brushes' => array('Php')
     )
 );
-// TODO поставить ссылку на SplFileObject
 ?>
 
 <h2>Описание</h2>
@@ -26,6 +25,13 @@ echo $view->render(
 <h2>Использование</h2>
 
 <script type="syntaxhighlighter" class="brush: php"><![CDATA[
+$fileInfo = new SplFileInfo(__DIR__ . '/test/just-a-file.txt');
+echo "filename: " . $fileInfo->getFilename() . "\n";
+echo "without extension: " . $fileInfo->getBasename('.txt') . "\n";
+echo "extension: " . $fileInfo->getExtension() . "\n";
+echo "path: " . $fileInfo->getRealPath() . "\n";
+echo "size: " . $fileInfo->getSize() . "\n";
+echo "mtime: " . date('Y-m-d H:i:s', $fileInfo->getMTime()) . "\n";
 ]]></script>
 
 <pre>
@@ -74,6 +80,19 @@ echo "mtime: " . date('Y-m-d H:i:s', $fileInfo->getMTime()) . "\n";
     <br/>
     <code>getRealPath</code> использует слэши определённые ОС.
 </p>
+<script type="syntaxhighlighter" class="brush: php"><![CDATA[
+echo "--existing file\n";
+$fileInfo = new SplFileInfo(__DIR__ . '/test/../test/just-a-file.txt');
+echo "getPathname: " . $fileInfo->getPathname() . "\n";
+echo "getPath: " . $fileInfo->getPath() . "\n";
+echo "getRealPath: " . $fileInfo->getRealPath() . "\n";
+
+echo "\n--not existing file\n";
+$fileInfo = new SplFileInfo(__DIR__ . '/test/nope');
+echo "getPathname: " . $fileInfo->getPathname() . "\n";
+echo "getPath: " . $fileInfo->getPath() . "\n";
+echo "getRealPath: " . $fileInfo->getRealPath() . "\n";
+]]></script>
 <pre>
 <?php
 echo "--existing file\n";
@@ -99,6 +118,12 @@ echo "getRealPath: " . $fileInfo->getRealPath() . "\n";
     <li><b>MTime</b> - время модификации содержимого файла</li>
     <li><b>CTime</b> - время модификации информации файла, это может быть изменение владельцев, параметров доступа, перемещение самого файла. При изменении содержимого файла, это значение тоже меняется.</li>
 </ul>
+<script type="syntaxhighlighter" class="brush: php"><![CDATA[
+$fileInfo = new SplFileInfo(__DIR__ . '/test/just-a-file.txt');
+echo "atime: " . date('Y-m-d H:i:s', $fileInfo->getATime()) . "\n";
+echo "mtime: " . date('Y-m-d H:i:s', $fileInfo->getMTime()) . "\n";
+echo "ctime: " . date('Y-m-d H:i:s', $fileInfo->getCTime()) . "\n";
+]]></script>
 <pre>
 <?php
 $fileInfo = new SplFileInfo(__DIR__ . '/test/just-a-file.txt');
@@ -122,7 +147,7 @@ echo "ctime: " . date('Y-m-d H:i:s', $fileInfo->getCTime()) . "\n";
     Если с <code>getPathInfo</code> ещё более менее ясно, то <code>getFileInfo</code> вообще не понятно для чего.
 </p>
 <p>
-    На самом деле эти методы предназначены для наследников <code>SplFileInfo</code>, а именно для SplFileObject и всех итераторов директорий (каждый из них так или иначе наследуется от <code>SplFileInfo</code>).
+    На самом деле эти методы предназначены для наследников <code>SplFileInfo</code>, а именно для <a href="spl-file-object">SplFileObject</a> и всех итераторов директорий (каждый из них так или иначе наследуется от <code>SplFileInfo</code>).
 </p>
 <p>
     <code>SplFileObject</code> предназначен для манипуляции файлом и через него можно получить информацию о файле (с помощью метода <code>getFileInfo</code>), тут то как раз и вернётся наш кастомный класс. 
@@ -130,12 +155,22 @@ echo "ctime: " . date('Y-m-d H:i:s', $fileInfo->getCTime()) . "\n";
 <p>
     А вот для итераторов он просто незаменим. Например для итератора <a href="../iterators/filesystem-iterator">FilesystemIterator</a> каждый элемент будет объектом нашего класса.
 </p>
+<script type="syntaxhighlighter" class="brush: php"><![CDATA[
+class MyFileInfo extends SplFileInfo
+{
+}
+
+$it = new FilesystemIterator(__DIR__ . '/test/');
+$it->setInfoClass('MyFileInfo');
+foreach ($it as $file) {
+    echo "(" . get_class($file) . ") $file\n";
+}
+]]></script>
 <pre>
 <?php
 
 class MyFileInfo extends SplFileInfo
 {
-
 }
 
 $it = new FilesystemIterator(__DIR__ . '/test/');
@@ -160,4 +195,5 @@ foreach ($it as $file) {
 <h2>Ссылки:</h2>
 <ul>
     <li><a href="http://php.net/manual/ru/class.splfileinfo.php">Официальная документация</a></li>
+    <li><a href="http://www.linux-faqs.info/general/difference-between-mtime-ctime-and-atime">Различия между mtime, ctime и atime</a></li>
 </ul>

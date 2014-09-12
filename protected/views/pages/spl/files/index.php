@@ -16,6 +16,7 @@ $view['slots']->set('breadcrumbs', array(
 
 <ul>
 	<li><a href="spl-file-info">SplFileInfo</a></li>
+    <li><a href="spl-file-object">SplFileObject</a></li>
 </ul>
 
 <h2>Ссылки:</h2>
