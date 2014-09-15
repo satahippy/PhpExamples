@@ -13,6 +13,7 @@ $view['slots']->set('breadcrumbs', array(
 
 <ul>
     <li><a href="array-object">ArrayObject</a></li>
+    <li><a href="spl-subject">SplSubject</a></li>
 </ul>
 
 <h2>Ссылки:</h2>
