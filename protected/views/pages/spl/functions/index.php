@@ -14,6 +14,7 @@ $view['slots']->set('breadcrumbs', array(
 <h3>Работа с классами</h3>
 <ul>
     <li><a href="class_implements">class_implements</a></li>
+    <li><a href="class_parents">class_parents</a></li>
 </ul>
 
 <h3>Работа с итераторами</h3>
