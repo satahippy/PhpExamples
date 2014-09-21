@@ -21,6 +21,7 @@ $view['slots']->set('breadcrumbs', array(
 <h3>Работа с итераторами</h3>
 <ul>
     <li><a href="iterator_apply">iterator_apply</a> - выполняет функцию для каждого элемента итератора</li>
+    <li><a href="iterator_count">iterator_count</a> - считает количество элементов в итераторе</li>
 </ul>
 
 <h3>Работа с автозагрузкой</h3>
