@@ -140,11 +140,19 @@ $test = new TestClass2();
     Функцию <code>__autoload</code> необходимо явным образом регистрировать с помощью <code>spl_autoload_register</code>, в противном случае, она исключиться из стэка автозагрузчиков при первом вызове <code>spl_autoload_register</code>.
 </p>
 
+<h2>PSR</h2>
+<p>
+    Ну и конечно же стоит упомянуть о <a href="http://www.php-fig.org/">PSR</a>. Эти ребята (представители разных фреймворков) разработали целых 2 стандарта для автозагрузчиков и названий классов - PSR-0 и PSR-4.
+    <br/>
+    Настоятельно рекомендуется к ознакомлению.
+</p>
+
 <h2>Ссылки:</h2>
 <ul>
     <li><a href="http://php.net/manual/ru/language.oop5.autoload.php">Автоматическая загрузка классов. Официальная документация</a></li>
     <li><a href="http://php.net/manual/ru/function.spl-autoload-register.php">spl_autoload_register. Официальная документация</a></li>
     <li><a href="http://php.net/manual/ru/function.autoload.php">__autoload. Официальная документация</a></li>
+    <li><a href="http://www.php-fig.org/">PSR</a></li>
     <li><a href="http://habrahabr.ru/post/136761/">неплохая вводная статья в автозагрузчики</a></li>
     <li><a href="http://habrahabr.ru/post/138920/">неплохая статья на тему проблемы автозагрузчиков</a></li>
 </ul>
