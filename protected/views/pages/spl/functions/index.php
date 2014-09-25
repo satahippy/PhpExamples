@@ -29,6 +29,7 @@ $view['slots']->set('breadcrumbs', array(
 <ul>
     <li><a href="spl_autoload_register">spl_autoload_register</a> - регистрирует функцию-автозагрузчик</li>
     <li><a href="spl_autoload_unregister">spl_autoload_unregister</a> - снимаем функцию-автозагрузчик, добавленную ранее</li>
+    <li><a href="spl_autoload">spl_autoload</a> - автозагрузчик по дефолту</li>
 </ul>
 
 <h3 id="other">Разное</h3>
