@@ -31,6 +31,7 @@ $view['slots']->set('breadcrumbs', array(
     <li><a href="spl_autoload_unregister">spl_autoload_unregister</a> - снимаем функцию-автозагрузчик, добавленную ранее</li>
     <li><a href="spl_autoload">spl_autoload</a> - автозагрузчик по дефолту</li>
     <li><a href="spl_autoload_extensions">spl_autoload_extensions</a> - расширения файлов для функции <code>spl_autoload</code></li>
+    <li><a href="spl_autoload_functions">spl_autoload_functions</a> - возвращет список всех зарегистрированных автозагрузчиков</li>
 </ul>
 
 <h3 id="other">Разное</h3>
