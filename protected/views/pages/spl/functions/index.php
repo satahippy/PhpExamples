@@ -32,6 +32,7 @@ $view['slots']->set('breadcrumbs', array(
     <li><a href="spl_autoload">spl_autoload</a> - автозагрузчик по дефолту</li>
     <li><a href="spl_autoload_extensions">spl_autoload_extensions</a> - расширения файлов для функции <code>spl_autoload</code></li>
     <li><a href="spl_autoload_functions">spl_autoload_functions</a> - возвращет список всех зарегистрированных автозагрузчиков</li>
+    <li><a href="spl_autoload_call">spl_autoload_call</a> - пытается загрузить класс всеми зарегистрированными автозагрузчиками</li>
 </ul>
 
 <h3 id="other">Разное</h3>
