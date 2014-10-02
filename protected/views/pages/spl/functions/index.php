@@ -36,6 +36,9 @@ $view['slots']->set('breadcrumbs', array(
 </ul>
 
 <h3 id="other">Разное</h3>
+<ul>
+    <li><a href="spl_classes">spl_classes</a> - возвращает список всех доступных на данный момент классов SPL</li>
+</ul>
 
 <h2>Ссылки:</h2>
 <ul>
